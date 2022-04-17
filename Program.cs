@@ -9,6 +9,7 @@ namespace LED_Numbers
         {
             Console.WriteLine("Write down numbers to convert:");
             string wejscie = Console.ReadLine();
+            
             List<int> dane = new List<int>();
 
             foreach (var item in wejscie)
@@ -153,7 +154,7 @@ namespace LED_Numbers
                     Array.Copy(VIV, 0, TABjag[j], 0, 9);
                 }
             }
-
+            Console.WriteLine();
             Console.WriteLine("Result");
             for (int k = 0; k < TABjag.GetLength(0); k++)
             {
